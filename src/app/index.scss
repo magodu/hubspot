@@ -1,0 +1,370 @@
+/* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+
+// bower:scss
+// endbower
+
+/*
+ Global reset
+
+*****************************************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Variables */
+
+$text-color: #b0b0b0;
+$footer-color: #404040;
+
+/* APP CSS begin */
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    height: 499px;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    background-image: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-bottom: 2em;
+    .header-text {
+        position: relative;
+        top: 1em;
+        left: 22%;
+        width: 50%;
+        h1 {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+}
+
+footer {
+    background: $footer-color;
+    color: $text-color;
+    height: 150px;
+    padding: 30px 15px 30px 15px;
+    .footer-container {
+        width: 70%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+hr.separator {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 2px;
+    background: #ededed;
+}
+
+.mobile-button {
+    display: none;
+}
+
+.content {
+    margin: 0 0 20px 0;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    h1 {
+        color: #666666;
+        font-size: 30px;
+    }
+}
+
+.sub-title {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        width: 70%;
+        font-size: 18px;
+        color: $text-color;
+    }
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.featured {
+    display: flex;
+    height: 225px;
+    width: 740px;
+    margin: 30px auto;
+    article {
+        margin: auto;
+        .tinted {
+            cursor: pointer;
+            background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/grumpy1.jpg);
+            background-size: cover;
+            width: 225px;
+            height: 225px;
+            position: relative;
+            float: left;
+            &:hover {
+                background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./images/grumpy1.jpg);
+            }
+        }
+        h3 {
+            color: white;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 1.2em;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    article {
+        display: flex;
+        width: 80%;
+        margin: 35px auto;
+        justify-content: flex-start;
+        cursor: pointer;
+        .image-new {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .text-new {
+            flex: 5;
+        }
+        .title-new {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #575757;
+        }
+        .body-new {
+            color: $text-color;
+            text-align: justify;
+        }
+    }
+}
+
+.submenu {
+    margin: auto;
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    ul {
+        font-size: 15px;
+        li {
+            margin-bottom: 5px;
+            cursor: pointer;
+            &:hover {
+                color: green;
+            }
+        }
+    }
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1022px) {
+    header {
+        background-size: auto;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1022px) and (max-width: 1230px) {
+    header {
+        height: 470px;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        .header-text {
+            top: 0.5em;
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+    .featured {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        article {
+            margin: 15px auto;
+        }
+    }
+}
+
+
+/* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+
+// injector
+// endinjector

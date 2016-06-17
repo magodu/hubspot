@@ -1,0 +1,44 @@
+<div class="container">
+    <header>
+        <div>
+            <nav-bar creation-date="main.creationDate"></nav-bar>
+            <div class="header-text">
+                <h1>{{data.backgroundTitle1}}</h1><br />
+                <h1>{{data.backgroundTitle2}}</h1>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="title">
+            <h1>{{data.title}}</h1>
+        </div>
+        <div class="sub-title">
+            <h2>{{data.subtitle}}</h2></div>
+        <section class="featured">
+            <article ng-repeat="feature in data.features" ng-click="goToLink(feature.link)">
+                <div class="tinted">
+                    <h3>{{feature.title}}</h3>
+                </div>
+            </article>
+        </section>
+        <hr class="separator">
+        <section class="news">
+            <article ng-repeat="new in data.news" ng-click="goToLink(new.link)">
+                <div class="image-new"><img ng-src="/app/images/{{new.image}}"></div>
+                <div class="text-new">
+                    <div class="title-new">{{new.title}}</div>
+                    <div class="body-new">{{new.body}}</div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <section class="submenu" ng-repeat="submenu in data.submenus">
+                <h3>{{submenu.submenuTitle}}</h3>
+                <ul>
+                    <li ng-repeat="link in submenu.links" ng-click="goToLink(link.link)">{{link.linkTitle}}</li>
+                </ul>
+            </section>
+        </div>
+    </footer>

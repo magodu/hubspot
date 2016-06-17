@@ -1,0 +1,122 @@
+{
+    "data": {
+    	"backgroundTitle1": "oh great...",
+    	"backgroundTitle2": "I'm a background.",
+        "title": "Lorem Ipsum is simply dummy",
+        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s, when an unknown",
+        "features": [{
+            "title": "lorem ipsum",
+            "link": "feature1",
+            "image": "grumpy1.jpg"
+        }, {
+            "title": "lorem ipsum ipsum Lorem",
+            "link": "feature2",
+            "image": "grumpy1.jpg"
+        }, {
+            "title": "lorem ipsum",
+            "link": "feature3",
+            "image": "grumpy1.jpg"
+        }],
+        "news": [{
+            "title": "Lorem ipsum is simply",
+            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "image": "grumpy2.jpg",
+            "link": "new1"
+        }, {
+            "title": "Lorem ipsum is simply",
+            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "image": "grumpy2.jpg",
+            "link": "new2"
+        }, {
+            "title": "Lorem ipsum is simply",
+            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "image": "grumpy2.jpg",
+            "link": "new3"
+        }],
+        "submenus": [{
+            "submenuTitle": "Submenu",
+            "links": [{
+                "linkTitle": "Menu Item",
+                "link": "link11"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link12"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link13"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link14"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link15"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link16"
+            }]
+        }, {
+            "submenuTitle": "Submenu",
+            "links": [{
+                "linkTitle": "Menu Item",
+                "link": "link21"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link22"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link23"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link24"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link25"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link26"
+            }]
+        }, {
+            "submenuTitle": "Submenu",
+            "links": [{
+                "linkTitle": "Menu Item",
+                "link": "link31"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link32"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link33"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link34"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link35"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link36"
+            }]
+        }, {
+            "submenuTitle": "Submenu",
+            "links": [{
+                "linkTitle": "Menu Item",
+                "link": "link41"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link42"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link43"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link44"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link45"
+            }, {
+                "linkTitle": "Menu Item",
+                "link": "link46"
+            }]
+        }]
+    }
+}
