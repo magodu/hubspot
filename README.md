@@ -12,7 +12,7 @@ Sass and JS is compiled with Gulp
 Once cloned run:
 
 `npm install`
-`bower install`
+and `bower install`
 
 To run: 
 
