@@ -14,15 +14,18 @@
             })
             .when('/about', {
                 templateUrl: 'app/about/about.html',
-                controller: 'AboutController'
+                controller: 'AboutController',
+                controllerAs: 'about'
             })
             .when('/services', {
                 templateUrl: 'app/services/services.html',
-                controller: 'ServicesController'
+                controller: 'ServicesController',
+                controllerAs: 'services'
             })
             .when('/contact', {
                 templateUrl: 'app/contact/contact.html',
-                controller: 'ContactController'
+                controller: 'ContactController',
+                controllerAs: 'contact'
             })
             .otherwise({
                 redirectTo: '/'
