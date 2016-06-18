@@ -8,28 +8,28 @@
     /** @ngInject */
     function MainController($scope, MainService) {
 
-    	var scopeProperties = {
-    		data: {}
-    	}
+        var scopeProperties = {
+            data: {}
+        }
 
-    	angular.extend($scope, scopeProperties);
+        angular.extend($scope, scopeProperties);
 
 
-    	$scope.goToLink = function(link) {
-    		console.log('manage link: ' + link);
-    	};
+        $scope.goToLink = function(link) {
+            console.log('manage link: ' + link);
+        };
 
-    	function getData() {
-    		MainService.getData().then(function (response) {
-	            $scope.data = response;
-	        });
-    	}
+        function getData() {
+            MainService.getData().then(function (response) {
+                $scope.data = response;
+            });
+        }
 
-    	function init() {
-    		getData();
-    	}
+        function init() {
+            getData();
+        }
 
-    	init();
+        init();
 
     }
 })();

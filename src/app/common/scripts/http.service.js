@@ -10,7 +10,7 @@
 
         function includeParamsInUrl(url, params) {
             var finalUrl = url,
-            	paramRegExp;
+                paramRegExp;
 
             if (params) {
                 angular.forEach(params, function(value, key) {
