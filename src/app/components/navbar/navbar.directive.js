@@ -17,6 +17,7 @@
             controllerAs: 'vm',
             bindToController: true,
             link: function(scope) {
+                // I use DOM to not to have to load another framework like jQuery
                 var menuButton = document.getElementById('menu-icon'),
                     mainNav = document.getElementsByClassName('main-nav');
 
