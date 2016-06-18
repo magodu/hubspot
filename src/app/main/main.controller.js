@@ -21,7 +21,7 @@
 
     	function getData() {
     		MainService.getData().then(function (response) {
-	            $scope.data = response.data;
+	            $scope.data = response;
 	        });
     	}
 

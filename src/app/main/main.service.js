@@ -6,31 +6,29 @@
         .service('MainService', MainService);
 
     /** @ngInject */
-    function MainService($http, $q) {
+    function MainService($q, HttpService) {
 
-    	var serviceUrl = '/app/mock/mockData.json';
+        var serviceUrl = '/app/mock/mockData.json';
 
         function getData() {
             var deferred = $q.defer();
 
-            $http({
-	            'method': 'GET',
-	            'cache': true,
-	            'url': serviceUrl
-	        }).
-	            success(function (response) {
-	                deferred.resolve(response);
-	            }).
-	            error(function (response, status) {
-	                deferred.reject(response);
-	            });
+            function success(data) {
+                return deferred.resolve(data);
+            }
 
-	        return deferred.promise;
+            function error(data) {
+                return deferred.reject(data);
+            }
+
+            HttpService.get(serviceUrl).then(success, error);
+
+            return deferred.promise;
         }
 
         return {
-	        getData: getData
-	    };
+            getData: getData
+        };
 
 
     }
